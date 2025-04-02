@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lng="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+<body>
+    <header>
+        <img src="shoponlinelogo.png" alt="Shopping Logo" style="height: 50px; width: auto;">
+        <h1> Onilne shop </h1>
+    </header>
+    <div style="display: flex; justify-content: flex-end; gap: 10px; padding: 10px;"></div>
+    <a href="login.html">
+        <button style="padding: 5px 10px; border: none; background-color: #28a745; color: white; border-radius: 4px; cursor: pointer;">Login</button>
+    </a>
+    </a>
+    <a href="signin.html">
+        <button style="padding: 5px 10px; border: none; background-color: #007BFF; color: white; border-radius: 4px; cursor: pointer;">Sign Up</button>
+    </a>
+    <main>
+        <nav>
+            <ul style="list-style: none; display: flex; gap: 10px; padding: 0; margin: 0;">
+            <li><a href="#home" style="text-decoration: none;">Home</a></li>
+            <li><a href="#projects" style="text-decoration: none;">My Projects</a></li>
+            <li><a href="#about" style="text-decoration: none;">About Me</a></li>
+            <li><a href="#contact" style="text-decoration: none;">Contact</a></li>
+            </ul>
+            <form action="https://www.google.com/search" method="get" class="search-form">
+                <input type="text" name="q" placeholder="Search..." class="search-input">
+                <button type="submit" class="search-button">Search</button>
+            </form>
+        </nav>
+        <section>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+                    <h3>Item 1</h3>
+                    <p>Price: $10</p>
+                </div>
+                <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+                    <h3>Item 2</h3>
+                    <p>Price: $20</p>
+                </div>
+                <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+                    <h3>Item 3</h3>
+                    <p>Price: $15</p>
+                </div>
+                <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+                    <h3>Item 4</h3>
+                    <p>Price: $25</p>
+                </div>
+                <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+                    <h3>Item 5</h3>
+                    <p>Price: $30</p>
+                </div>
+                <div style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+                    <h3>Item 6</h3>
+                    <p>Price: $40</p>
+                    </div>
+            </div>
+        </section>
+        <section id="reviews" style="margin-top: 20px;">
+            <h2>Customer Reviews</h2>
+            <div style="display: flex; flex-direction: column; gap: 15px;">
+                <div style="border: 1px solid #ccc; padding: 10px; border-radius: 4px;">
+                    <p><strong>⭐⭐⭐⭐⭐</strong> John Doe: Great products and fast delivery!</p>
+                </div>
+                <div style="border: 1px solid #ccc; padding: 10px; border-radius: 4px;">
+                    <p><strong>⭐⭐⭐⭐</strong> Jane Smith: Excellent customer service. Highly recommend!</p>
+                </div>
+                <div style="border: 1px solid #ccc; padding: 10px; border-radius: 4px;">
+                    <p><strong>⭐⭐⭐⭐⭐</strong> Mike Johnson: Quality items at reasonable prices.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="write-message" style="margin-top: 20px;">
+            <h2>Write a Message</h2>
+            <form action="msgsubmit.html" method="post" style="display: flex; flex-direction: column; gap: 10px;">
+                <input type="text" name="name" placeholder="Your Name" required style="padding: 5px; border: 1px solid #ccc; border-radius: 4px;">
+                <textarea name="message" placeholder="Your Message" rows="4" required style="padding: 5px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+                <button type="submit" style="padding: 10px; border: none; background-color: #28a745; color: white; border-radius: 4px; cursor: pointer;">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div style="display: flex; justify-content: center; gap: 15px; padding: 10px;">
+            <a href="https://www.twitter.com" target="_blank" style="text-decoration: none;">
+                <i class="fab fa-twitter" style="font-size: 24px; color: #1DA1F2;"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" style="text-decoration: none;">
+                <i class="fab fa-facebook-f" style="font-size: 24px; color: #1877F2;"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" style="text-decoration: none;">
+                <i class="fab fa-instagram" style="font-size: 24px; color: #E4405F;"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" style="text-decoration: none;">
+                <i class="fab fa-linkedin-in" style="font-size: 24px; color: #0A66C2;"></i>
+            </a>
+            <a href="https://www.google.com" target="_blank" style="text-decoration: none;">
+                <i class="fab fa-google" style="font-size: 24px; color: #DB4437;"></i>
+            </a>
+        </div>
+        
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 20px; border-top: 1px solid #ccc;">
+            <p style="margin: 0;">Contact us: <a href="mailto:support@onlineshop.com" style="text-decoration: none; color: #007BFF;">support@onlineshop.com</a> | Phone: +1-800-123-4567</p>
+            <p style="margin: 0;">Address: 123 Shopping Street, E-commerce City, EC 45678</p>
+            <nav>
+                <ul style="list-style: none; display: flex; gap: 15px; padding: 0; margin: 0;">
+                    <li><a href="#privacy-policy" style="text-decoration: none; color: #007BFF;">Privacy Policy</a></li>
+                    <li><a href="#terms-of-service" style="text-decoration: none; color: #007BFF;">Terms of Service</a></li>
+                    <li><a href="#faq" style="text-decoration: none; color: #007BFF;">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p>&copy; 2023 My Web Page</p>
+    </footer>   
+</body>
+</head>
+</html>
+
+
+
